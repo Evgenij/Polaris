@@ -257,7 +257,7 @@ select[ui-style="ui_select"] {
   width: 100%;
   padding-right: 50px;
   appearance: none;
-  background: url("./pictures/arrow.svg") no-repeat right;
+  background: url("../pictures/arrow.svg") no-repeat right;
   background-position-x: calc(100% - 20px);
   background-color: #fcfcfc;
 }
@@ -1396,7 +1396,7 @@ footer .row .row-mailing input {
 }
 
 .check + label:after {
-  content: url("./pictures/arrow_check.svg");
+  content: url("../pictures/arrow_check.svg");
   position: absolute;
   top: 0px;
   left: 5px;
@@ -1544,6 +1544,8 @@ footer .row .row-mailing input {
 
 .box-sorting p {
   margin-right: 20px;
+  width: 165%;
+  display: block;
 }
 
 .box-sorting select[type='ui_select'] {
