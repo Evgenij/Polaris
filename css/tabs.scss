@@ -1,0 +1,106 @@
+@import 'variables.scss';
+
+// TAB ~~~~~~~~~~~~~~~ (.)(.)
+.tab {
+    padding-top: 100px;
+    margin-bottom: 20px;
+    position: relative;
+    overflow: hidden;
+    background: #fff;
+    width: 100%;
+    margin: 0 auto;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.5;
+    font-weight: 300;
+    color: #dbdbdb;
+    -webkit-font-smoothing: antialiased;
+}
+
+.tabs {
+    margin: auto;
+    position: relative;
+    overflow: hidden;
+    width: 80%;
+    justify-content: center;
+
+    li {
+        width: 80%;
+        overflow: hidden;
+        position: relative;
+        text-align: center;
+    }
+
+    a {
+        border-bottom: 1px solid #fff;
+        color: #888;
+        font-weight: 500;
+        display: block;
+        letter-spacing: 0;
+        outline: none;
+        padding: 20px 0px 17px;
+        text-decoration: none;
+        -webkit-transition: all 0.2s ease-in-out;
+        -moz-transition: all 0.2s ease-in-out;
+        transition: all 0.2s ease-in-out;
+        border-bottom: 3px solid $lightMainColor;
+    }
+}
+
+.tab-content {
+    margin-top: 50px;
+}
+
+.tabs_item {
+    width: 80%;
+    margin: auto;
+    display: none;
+    padding: 60px 0;
+
+    &:first-child {
+        display: block;
+    }
+}
+
+.current a {
+    color: $darkMainColor;
+    background: $lightMainColor;
+}
+
+.box-content {
+    align-items: flex-start;
+    margin-bottom: 50px;
+
+    h4 {
+        font-weight: bold;
+        color: $darkMainColor;
+        font-size: 20px;
+        margin-bottom: 45px;
+    }
+
+    .grid-content {
+        width: 100%;
+        margin-left: 40px;
+        color: $mainColorText;
+    }
+}
+
+.row {
+    width: 100%;
+
+    &:not(:last-child){
+        margin-bottom: 20px;
+    }
+
+    .col {
+        flex-basis: 50%;
+
+        &:first-child {
+            font-weight: bold;
+        }
+        &:last-child{
+            color: $grayColorText;
+        }
+    }
+}
+
+// END TAB ~~~~~~~~~~~~~~~ (.)(.)

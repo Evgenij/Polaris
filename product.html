@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/tabs.css">
+    <script src="https://kit.fontawesome.com/b388b447e5.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <title>Polaris - Магазин бытовой техники и электроники</title>
+</head>
+
+<body>
+
+    <header class="flex-block flex-column">
+        <nav class="menu flex-box">
+            <div class="container flex-box flex-row">
+                <div class="flex-box__column">
+                    <select name="language" id="lang" class="select">
+                        <option value="rus">Русский</option>
+                        <option value="eng">Англ.</option>
+                        <option value="eng">Укранс.</option>
+                    </select>
+                    <select name="currency" id="curr" class="select">
+                        <option value="rus">RUB</option>
+                        <option value="eng">USD</option>
+                        <option value="ua">UAH</option>
+                    </select>
+                </div>
+                <nav class="flex-box__column">
+                    <ul class="flex-box">
+                        <li><a href="#" target="_blank" rel="noopener noreferrer">Доставка и оплата</a></li>
+                        <li><a href="#" target="_blank" rel="noopener noreferrer">Контакты и помощь</a></li>
+                        <li><a href="#" target="_blank" rel="noopener noreferrer">Гарантия</a></li>
+                        <li class="special"><a href="#" target="_blank" rel="noopener noreferrer">Акции</a></li>
+                        <li class="special"><a href="#" target="_blank" rel="noopener noreferrer">Товары дня</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="flex-box__column"><img src="pictures/user_logo.svg" alt="user_logo"><select name="profile"
+                        id="profile" class="select">
+                        <option value="rus">Евгений</option>
+                    </select></div>
+            </div>
+        </nav>
+        <div class="container">
+            <div class="main-action flex-box flex-row">
+                <div class="flex-box__column">
+                    <div class="logo">
+                        <a href="index.html"> <img src="pictures/logo.svg" alt="logo" class="logo__img">
+                        </a>
+                        <div class="logo__content flex-box flex-column">
+                            <h1 class="logo__name">Polaris</h1>
+                            <div class="logo__descr">магазин бытовой техники и электроники</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex-box__column">
+                    <form action="#" method="post" class="search-block flex-box">
+                        <div class="search-block__input flex-box">
+                            <div class="select-block">
+                                <select class="select" name="language">
+                                    <option value="">Каталог товаров</option>
+                                </select>
+                            </div>
+                            <input type="text" placeholder="Я ищу...">
+                        </div>
+                        <button type="submit" class="button">Найти <i class="fab fa-sistrix"></i></button>
+                    </form>
+                </div>
+                <div class="flex-box__column">
+                    <div class="personal-data flex-box">
+                        <div class="personal-data__item">
+                            <div class="item-icon block-hint">
+                                <a href="#"><img src="pictures/comparison.svg" alt="" class="item-icon"></a>
+                                <div class="item-data">1</div>
+                                <div class="hint">
+                                    <div class="arrow"></div>
+                                    <div class="hint__content">Сравнения</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="personal-data__item">
+                            <div class="item-icon block-hint">
+                                <a href="#"><img src="pictures/like.svg" alt="" class="item-icon"></a>
+                                <div class="item-data">3</div>
+                                <div class="hint">
+                                    <div class="arrow"></div>
+                                    <div class="hint__content">Избранное</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="personal-data__item flex-box">
+                            <div class="item-icon">
+                                <a href="basket.html"><img src="pictures/basket.svg" alt="" class="item-icon"></a>
+                                <div class="item-data">2</div>
+                            </div>
+                            <div class="item-title flex-box flex-column">
+                                <span>корзина</span>
+                                <h2>1230 руб.</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <div class="box-hierarchy">
+            <div class="container">
+                <ul class="hierarchy-goods hierarchy flex-box">
+                    <li class="hierarchy-item"><a href="index.html">Главная</a></li>
+                    <li class="hierarchy-item"><a href="#">Техника для кухни</a></li>
+                    <li class="hierarchy-item"><a href="#">Крупная техника для кухни</a></li>
+                    <li class="hierarchy-item"><a href="#">Холодильники и морозильники</a></li>
+                    <li class="hierarchy-item"><a href="#">Холодильники</a></li>
+                    <li class="hierarchy-item"><a href="#">Холодильник Atlant MXM 4025-000</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="product-block">
+                <div class="columns flex-box">
+                    <div class="product__photo">
+                        <img src="pictures/fridge-4.jpeg" alt="холодильник">
+                    </div>
+                    <div class="product__description flex-box flex-column">
+                        <h3 class="product__name description__row">Холодильник Atlant MXM 4025-000</h3>
+                        <div class="additional-data flex-box flex-column">
+                            <div class="description__row flex-box">
+                                <div class="stars flex-box">
+                                    <img src="pictures/star-green.svg" alt="star">
+                                    <img src="pictures/star-green.svg" alt="star">
+                                    <img src="pictures/star-green.svg" alt="star">
+                                    <img src="pictures/star-green.svg" alt="star">
+                                    <img src="pictures/star-gray.svg" alt="star">
+                                </div>
+                                <a href="#" class="label">отзывов (12)</a>
+                            </div>
+                            <div class="description__row flex-box">
+                                <div class="availability label">наличие: <span class="green-text">в наличии</span></div>
+                            </div>
+                        </div>
+                        <div class="color flex-box flex-column">
+                            <span class="label">цвет</span>
+                            <div class="color-value">
+                                <input type="radio" checked color="gray" class="custom-radio gray" id="color1" name="color" value="yes">
+                                <label for="color1"></label>
+                                <input type="radio" color="black" class="custom-radio" id="color2" name="color" value="yes">
+                                <label for="color2"></label>
+                                <input type="radio" color="gold" class="custom-radio" id="color3" name="color" value="yes">
+                                <label for="color3"></label>
+                            </div>
+                        </div>
+                        <div class="cost flex-box flex-column">
+                            <p class="label">
+                                <span class="green-text">-15%</span> экономия <span class="green-text">840 руб.</span>
+                            </p>
+                            <div class="cost__value flex-box">
+                                <h3>23 450 руб.</h3>
+                                <h4>25 560 руб.</h4>
+                            </div>
+                        </div>
+                        <div class="count-product flex-box flex-column">
+                            <span class="label">количество</span>
+                            <div class="row flex-box">
+                                <div class="column">
+                                    <div class="count__value">
+                                        <input type="number" value="1"> 
+                                        <div class="buttons flex-box">
+                                            <span>-</span>
+                                            <span>+</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="column">
+                                    <a href="#" class="button">+ добавить в корзину</a>
+                                </div>
+                                <div class="column flex-box">
+                                    <div class="block-hint">
+                                        <img src="pictures/like-green.svg" alt="like">
+                                        <div class="hint">
+                                            <div class="arrow"></div>
+                                            <div class="hint__content">В избранное</div>
+                                        </div>
+                                    </div>
+                                    <div class="block-hint">
+                                        <img src="pictures/comprasion-green.svg" alt="like">
+                                        <div class="hint">
+                                            <div class="arrow"></div>
+                                            <div class="hint__content">В сравнения</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tab">
+                <ul class="tabs flex-box">
+                    <li><a href="#">Характеристики</a></li>
+                    <li><a href="#">Отзывы</a></li>
+                </ul> <!-- / tabs -->
+
+                <div class="tab_content">
+                    <div class="tabs_item">
+                        <div class="box-content flex-box flex-column">
+                            <h4>Основные характеристики</h4>
+                            <div class="grid-content flex-box flex-column">
+                                <div class="row flex-box">
+                                    <div class="col">Бренд</div>
+                                    <div class="col">Atlant</div>
+                                </div>
+                                <div class="row  flex-box">
+                                    <div class="col">Цвет</div>
+                                    <div class="col">Серебристый</div>
+                                </div>
+                                <div class="row  flex-box">
+                                    <div class="col">Управление</div>
+                                    <div class="col">Есть</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="box-content flex-box flex-column">
+                            <h4>Общие характеристики</h4>
+                            <div class="grid-content flex-box flex-column">
+                                <div class="row flex-box">
+                                    <div class="col">Цвет / Материал покрытия</div>
+                                    <div class="col">Серый / Пластик / Металл</div>
+                                </div>
+                                <div class="row  flex-box">
+                                    <div class="col">Энергопотребление</div>
+                                    <div class="col">Класс А+</div>
+                                </div>
+                                <div class="row  flex-box">
+                                    <div class="col">Габариты (Ширина - Глубина - Высота)</div>
+                                    <div class="col">59.5 - 73.7 - 186 см</div>
+                                </div>
+                                <div class="row  flex-box">
+                                    <div class="col">Вес</div>
+                                    <div class="col">71 кг</div>
+                                </div>
+                                <div class="row  flex-box">
+                                    <div class="col">Хладагент</div>
+                                    <div class="col">R600a (Изобутан)</div>
+                                </div>
+                                <div class="row  flex-box">
+                                    <div class="col">Инвенторный тип компрессора</div>
+                                    <div class="col">Да</div>
+                                </div>
+                                <div class="row  flex-box">
+                                    <div class="col">Количество дверей</div>
+                                    <div class="col">2</div>
+                                </div>
+                                <div class="row  flex-box">
+                                    <div class="col">Количество камер</div>
+                                    <div class="col">2</div>
+                                </div>
+                                <div class="row  flex-box">
+                                    <div class="col">Количество компрессоров</div>
+                                    <div class="col">1</div>
+                                </div>
+                                <div class="row  flex-box">
+                                    <div class="col">Морозильная камера</div>
+                                    <div class="col">Снизу</div>
+                                </div>
+                                <div class="row  flex-box">
+                                    <div class="col">Управление со смартфона</div>
+                                    <div class="col">Есть</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="box-content flex-box flex-column">
+                            <h4>Холод</h4>
+                            <div class="grid-content flex-box flex-column">
+                                <div class="row flex-box">
+                                    <div class="col">Дополнительные возможности</div>
+                                    <div class="col">Супер заморозка, индикация температуры</div>
+                                </div>
+                                <div class="row  flex-box">
+                                    <div class="col">Мощность замораживания</div>
+                                    <div class="col">До 12 кг/сутки</div>
+                                </div>
+                                <div class="row  flex-box">
+                                    <div class="col">Размораживание холодильной камеры</div>
+                                    <div class="col">No Frost</div>
+                                </div>
+                                <div class="row  flex-box">
+                                    <div class="col">Размораживание морозильной камеры</div>
+                                    <div class="col">No Frost</div>
+                                </div>
+                                <div class="row  flex-box">
+                                    <div class="col">Зона свежести</div>
+                                    <div class="col">Есть</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="box-content flex-box flex-column">
+                            <h4>Безопасность</h4>
+                            <div class="grid-content flex-box flex-column">
+                                <div class="row flex-box">
+                                    <div class="col">Защита от детей</div>
+                                    <div class="col">Есть</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="box-content flex-box flex-column">
+                            <h4>Другие функции и особенности</h4>
+                            <div class="grid-content flex-box flex-column">
+                                <div class="row flex-box">
+                                    <div class="col">Дисплей</div>
+                                    <div class="col">Есть</div>
+                                </div>
+                                <div class="row  flex-box">
+                                    <div class="col">Генератор льда</div>
+                                    <div class="col">Отсутствует</div>
+                                </div>
+                                <div class="row  flex-box">
+                                    <div class="col">Климатический класс</div>
+                                    <div class="col">N, SN, ST</div>
+                                </div>
+                                <div class="row  flex-box">
+                                    <div class="col">Материал полок</div>
+                                    <div class="col">Стекло</div>
+                                </div>
+                                <div class="row  flex-box">
+                                    <div class="col">Возможность перешивания двери</div>
+                                    <div class="col">Есть</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> <!-- / tabs_item -->
+                    <div class="tabs_item">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores, suscipit, eaque asperiores neque numquam nam possimus dolorem ipsa aspernatur reiciendis?</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores, suscipit, eaque asperiores neque numquam nam possimus dolorem ipsa aspernatur reiciendis?</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores, suscipit, eaque asperiores neque numquam nam possimus dolorem ipsa aspernatur reiciendis?</p>
+                    </div> <!-- / tabs_item -->
+                </div> <!-- / tab_content -->
+            </div> <!-- / tab -->
+        </div>
+    </main>
+
+    <footer>
+        <div class="container flex-box flex-column">
+            <div class="row flex-box">
+                <div class="column">
+                    <div class="logo">
+                        <img src="pictures/logo.svg" alt="logo" class="logo__img">
+                        <div class="logo__content flex-box flex-column">
+                            <h1 class="logo__name">Polaris</h1>
+                            <div class="logo__descr">магазин бытовой техники и электроники</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="column flex-box">
+                    <img src="pictures/headfones_logo.svg" alt="headfones_logo" class="headfones_logo">
+                    <div class="content flex-box flex-column">
+                        <span>Есть вопросы? Прием звонков с 9:00 до 19:00</span>
+                        <div class="phones flex-box">
+                            <h2 class="phone">071-33-44-811</h2>
+                            <span>или</span>
+                            <h2 class="phone">071-33-44-811</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row flex-box">
+                <div class="column">
+                    <div class="menu-footer flex-box">
+                        <div class="menu-column flex-box flex-column">
+                            <div class="menu-title">О магазине</div>
+                            <div class="menu-items">
+                                <div class="item"><a href="#">Каталог</a></div>
+                                <div class="item"><a href="#">Акции</a></div>
+                                <div class="item"><a href="#">Товары дня</a></div>
+                                <div class="item"><a href="#">Магазин и контакты</a></div>
+                                <div class="item"><a href="#">Доставка и оплата</a></div>
+                            </div>
+                        </div>
+                        <div class="menu-column flex-box flex-column">
+                            <div class="menu-title">Для клиента</div>
+                            <div class="menu-items">
+                                <div class="item"><a href="#">Личный кабинет</a></div>
+                                <div class="item"><a href="#">Корзина</a></div>
+                                <div class="item"><a href="#">Избранное</a></div>
+                                <div class="item"><a href="#">Сравнения</a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="row-mailing flex-box">
+                        <img src="pictures/mail_logo.svg" alt="mail_logo">
+                        <div class="caption">
+                            <span>Подпишитесь на рассылку, чтобы получать</span>
+                            <p>эксклюзивные предложения, акции и скидки</p>
+                        </div>
+                    </div>
+                    <div class="row-mailing flex-box">
+                        <form action="#" class="flex-box">
+                            <input type="email" placeholder="введите ваш email">
+                            <button type="submit">отправить</button>
+                        </form>
+                    </div>
+                    <div class="row-mailing flex-box">
+                        <span>Мы в соц.сетях</span>
+                        <div class="icons flex-box">
+                            <i class="fa fa-vk" aria-hidden="true"></i>
+                            <i class="fa fa-facebook-square" aria-hidden="true"></i>
+                            <i class="fa fa-instagram" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row flex-box">
+                <div class="column">
+                    <p>&copy; 2013 - 2020 Интернет-магазин бытовой техники и электроники - <b>POLARIS</b> </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/tabs.js"></script>
+
+</body>
+
+</html>

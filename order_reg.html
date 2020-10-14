@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/b388b447e5.js" crossorigin="anonymous"></script>
+    <title>Polaris - Магазин бытовой техники и электроники</title>
+</head>
+
+<body>
+
+    <header class="flex-block flex-column">
+        <nav class="menu flex-box">
+            <div class="container flex-box flex-row">
+                <div class="flex-box__column">
+                    <select name="language" id="lang" class="select">
+                        <option value="rus">Русский</option>
+                        <option value="eng">Англ.</option>
+                        <option value="eng">Укранс.</option>
+                    </select>
+                    <select name="currency" id="curr" class="select">
+                        <option value="rus">RUB</option>
+                        <option value="eng">USD</option>
+                        <option value="ua">UAH</option>
+                    </select>
+                </div>
+                <nav class="flex-box__column">
+                    <ul class="flex-box">
+                        <li><a href="#" target="_blank" rel="noopener noreferrer">Доставка и оплата</a></li>
+                        <li><a href="#" target="_blank" rel="noopener noreferrer">Контакты и помощь</a></li>
+                        <li><a href="#" target="_blank" rel="noopener noreferrer">Гарантия</a></li>
+                        <li class="special"><a href="#" target="_blank" rel="noopener noreferrer">Акции</a></li>
+                        <li class="special"><a href="#" target="_blank" rel="noopener noreferrer">Товары дня</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="flex-box__column"><img src="pictures/user_logo.svg" alt="user_logo"><select name="profile"
+                        id="profile" class="select">
+                        <option value="rus">Евгений</option>
+                    </select></div>
+            </div>
+        </nav>
+        <div class="container">
+            <div class="main-action flex-box flex-row">
+                <div class="flex-box__column">
+                    <div class="logo">
+                        <a href="index.html"> <img src="pictures/logo.svg" alt="logo" class="logo__img">
+                        </a>
+                        <div class="logo__content flex-box flex-column">
+                            <h1 class="logo__name">Polaris</h1>
+                            <div class="logo__descr">магазин бытовой техники и электроники</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex-box__column">
+                    <form action="#" method="post" class="search-block flex-box">
+                        <div class="search-block__input flex-box">
+                            <div class="select-block">
+                                <select class="select" name="language">
+                                    <option value="">Каталог товаров</option>
+                                </select>
+                            </div>
+                            <input type="text" placeholder="Я ищу...">
+                        </div>
+                        <button type="submit" class="button">Найти <i class="fab fa-sistrix"></i></button>
+                    </form>
+                </div>
+                <div class="flex-box__column">
+                    <div class="personal-data flex-box">
+                        <div class="personal-data__item">
+                            <div class="item-icon block-hint">
+                                <a href="#"><img src="pictures/comparison.svg" alt="" class="item-icon"></a>
+                                <div class="item-data">1</div>
+                                <div class="hint">
+                                    <div class="arrow"></div>
+                                    <div class="hint__content">Сравнения</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="personal-data__item">
+                            <div class="item-icon block-hint">
+                                <a href="#"><img src="pictures/like.svg" alt="" class="item-icon"></a>
+                                <div class="item-data">3</div>
+                                <div class="hint">
+                                    <div class="arrow"></div>
+                                    <div class="hint__content">Избранное</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="personal-data__item flex-box">
+                            <div class="item-icon">
+                                <a href="basket.html"><img src="pictures/basket.svg" alt="" class="item-icon"></a>
+                                <div class="item-data">2</div>
+                            </div>
+                            <div class="item-title flex-box flex-column">
+                                <span>корзина</span>
+                                <h2>1230 руб.</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <h1 class="block-title">
+            Оформление заказа
+        </h1>
+        <div class="block-inform flex-box">
+            <i class="fa fa-comment-o" aria-hidden="true"></i>
+            <p>У вас уже есть аккаунт? <a href="#">Нажмите для входа</a>
+            </p>
+        </div>
+
+        <section>
+            <div class="container flex-box order">
+                <div class="order-column">
+                    <form action="#" class="form-order">
+                        <h2 class="form-order__title">Детали заказа</h2>
+                        <div class="row flex-box">
+                            <div class="column">
+                                <div class="column-item flex-box flex-column">
+                                    <label class="label required">Имя</label>
+                                    <input type="text" placeholder="введите ваше имя" required>
+                                </div>
+                            </div>
+                            <div class="column">
+                                <div class="column-item flex-box flex-column">
+                                    <label class="label">Фамилия</label>
+                                    <input type="text" placeholder="введите вашу фамилию">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="column span-2">
+                                <div class="column-item flex-box flex-column">
+                                    <label class="label required">Адрес</label>
+                                    <input type="text" placeholder="Название улицы и номер дома и квартиры">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="column span-2">
+                                <div class="column-item flex-box flex-column">
+                                    <label class="label required">Населенный пункт</label>
+                                    <select ui-style="ui_select">
+                                        <option value="">Москва</option>
+                                        <option value="">Санкт-Питербург</option>
+                                        <option value="">Ростов</option>
+                                        <option value="">Смоленск</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row flex-box">
+                            <div class="column">
+                                <div class="column-item flex-box flex-column">
+                                    <label class="label required">Телефон</label>
+                                    <input type="text" placeholder="введите ваш телефон" required>
+                                </div>
+                            </div>
+                            <div class="column">
+                                <div class="column-item flex-box flex-column">
+                                    <label class="label">Электронная почта</label>
+                                    <input type="email" placeholder="введите электронную почту" required>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="column span-2 type-delivery flex-box flex-column">
+                                <div class="type-delivery__item">
+                                    <input type="checkbox" class="check" id="check-reg" name="type-delivery" checked> 
+                                    <label for="check-reg">Зарегистрировать вас?</label>
+                                </div>
+                                <div class="type-delivery__item">
+                                    <input type="checkbox" class="check" id="check-del" name="type-delivery">
+                                    <label for="check-del">Доставка по другому адресу?</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="column span-2">
+                                <div class="column-item flex-box flex-column">
+                                    <label class="label">Примечание к заказу <span>(необязательно)</span></label>
+                                    <textarea name="area-comment" id="area-comment" cols="30" rows="10"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="order-column">
+                    <div class="cheque">
+                        <h2 class="cheque__header">
+                            Сумма заказа
+                        </h2>
+                        <div class="cheque__products products flex-box flex-column">
+                            <header class="section-title flex-box">
+                                <p>Товар</p> 
+                                <span></span>
+                            </header>
+                            <div class="product__item item flex-box">
+                                <div class="item-name">
+                                    Микроволновая печь Tesler ME-2053
+                                </div>
+                                <div class="item-count">
+                                    x2
+                                </div>
+                                <div class="item-cost">
+                                    5 720 руб.
+                                </div>
+                            </div>
+                            <div class="product__item item flex-box">
+                                <div class="item-name">
+                                    Холодильник Atlant MXM 4025-000
+                                </div>
+                                <div class="item-count">
+                                    x1
+                                </div>
+                                <div class="item-cost">
+                                    43 250 руб.
+                                </div>
+                            </div>
+                        </div>
+                        <header class="section-title flex-box">
+                            <p>Подытог</p> 
+                            <span>48 970 руб.</span>
+                        </header>
+                        <div class="delivery flex-box flex-column">
+                            <header class="section-title flex-box">
+                                <p>Доставка</p> 
+                                <span>600 руб.</span>
+                            </header>
+                            <div class="delivery-row flex-box flex-column">
+                                <input type="radio" class="radio" id="radio-delivery1" name="type-delivery">
+                                <label for="radio-delivery1">Самовывоз из магазина</label>
+                                <select ui-style="ui_select">
+                                    <option value="">ул.Пушкина 4-В</option>
+                                    <option value="">ул.Ставропольская 55</option>
+                                    <option value="">ул.Шевченко 130</option>
+                                </select>
+                            </div>
+                            <div class="delivery-row flex-box flex-column">
+                                <input type="radio" class="radio" id="radio-delivery2" name="type-delivery" checked>
+                                <label for="radio-delivery2">Доставка по адресу</label>
+                                <input type="text" placeholder="введите адрес доставки">
+                            </div>
+                        </div>
+                        <div class="cheque__total-cost flex-box">
+                            <p class="label">ИТОГО</p>
+                            <div class="value flex-box flex-column">
+                                <p>49 570 руб.</p>
+                                <span>оплата наличными</span>
+                            </div>
+                        </div>
+                        <div class="cheque-description">
+                            Ваши личные данные будут использоваться для обработки ваших заказов, упрощения вашей работы с сайтом и для других целей, описанных в нашей политика конфиденциальности.
+                        </div>
+                        <div class="cheque__footer">
+                            <form action="#">
+                                <a href="order_reg.html" class="button">Оформить заказ</a>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="container flex-box flex-column">
+            <div class="row flex-box">
+                <div class="column">
+                    <div class="logo">
+                        <img src="pictures/logo.svg" alt="logo" class="logo__img">
+                        <div class="logo__content flex-box flex-column">
+                            <h1 class="logo__name">Polaris</h1>
+                            <div class="logo__descr">магазин бытовой техники и электроники</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="column flex-box">
+                    <img src="pictures/headfones_logo.svg" alt="headfones_logo" class="headfones_logo">
+                    <div class="content flex-box flex-column">
+                        <span>Есть вопросы? Прием звонков с 9:00 до 19:00</span>
+                        <div class="phones flex-box">
+                            <h2 class="phone">071-33-44-811</h2>
+                            <span>или</span>
+                            <h2 class="phone">071-33-44-811</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row flex-box">
+                <div class="column">
+                    <div class="menu-footer flex-box">
+                        <div class="menu-column flex-box flex-column">
+                            <div class="menu-title">О магазине</div>
+                            <div class="menu-items">
+                                <div class="item"><a href="#">Каталог</a></div>
+                                <div class="item"><a href="#">Акции</a></div>
+                                <div class="item"><a href="#">Товары дня</a></div>
+                                <div class="item"><a href="#">Магазин и контакты</a></div>
+                                <div class="item"><a href="#">Доставка и оплата</a></div>
+                            </div>
+                        </div>
+                        <div class="menu-column flex-box flex-column">
+                            <div class="menu-title">Для клиента</div>
+                            <div class="menu-items">
+                                <div class="item"><a href="#">Личный кабинет</a></div>
+                                <div class="item"><a href="#">Корзина</a></div>
+                                <div class="item"><a href="#">Избранное</a></div>
+                                <div class="item"><a href="#">Сравнения</a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="row-mailing flex-box">
+                        <img src="pictures/mail_logo.svg" alt="mail_logo">
+                        <div class="caption">
+                            <span>Подпишитесь на рассылку, чтобы получать</span>
+                            <p>эксклюзивные предложения, акции и скидки</p>
+                        </div>
+                    </div>
+                    <div class="row-mailing flex-box">
+                        <form action="#" class="flex-box">
+                            <input type="email" placeholder="введите ваш email">
+                            <button type="submit">отправить</button>
+                        </form>
+                    </div>
+                    <div class="row-mailing flex-box">
+                        <span>Мы в соц.сетях</span>
+                        <div class="icons flex-box">
+                            <i class="fa fa-vk" aria-hidden="true"></i>
+                            <i class="fa fa-facebook-square" aria-hidden="true"></i>
+                            <i class="fa fa-instagram" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row flex-box">
+                <div class="column">
+                    <p>&copy; 2013 - 2020 Интернет-магазин бытовой техники и электроники - <b>POLARIS</b> </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

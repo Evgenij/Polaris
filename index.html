@@ -1,0 +1,920 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <script src="https://kit.fontawesome.com/b388b447e5.js" crossorigin="anonymous"></script>
+    <title>Polaris - Магазин бытовой техники и электроники</title>
+</head>
+
+<body>
+
+    <header class="flex-block flex-column">
+        <nav class="menu flex-box">
+            <div class="container flex-box flex-row">
+                <div class="flex-box__column">
+                    <select name="language" id="lang" class="select">
+                        <option value="rus">Русский</option>
+                        <option value="eng">Англ.</option>
+                        <option value="eng">Укранс.</option>
+                    </select>
+                    <select name="currency" id="curr" class="select">
+                        <option value="rus">RUB</option>
+                        <option value="eng">USD</option>
+                        <option value="ua">UAH</option>
+                    </select>
+                </div>
+                <nav class="flex-box__column">
+                    <ul class="flex-box">
+                        <li><a href="#" target="_blank" rel="noopener noreferrer">Доставка и оплата</a></li>
+                        <li><a href="#" target="_blank" rel="noopener noreferrer">Контакты и помощь</a></li>
+                        <li><a href="#" target="_blank" rel="noopener noreferrer">Гарантия</a></li>
+                        <li class="special"><a href="#" target="_blank" rel="noopener noreferrer">Акции</a></li>
+                        <li class="special"><a href="#" target="_blank" rel="noopener noreferrer">Товары дня</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="flex-box__column"><img src="pictures/user_logo.svg" alt="user_logo">
+                    <select name="profile"
+                        id="profile" class="select">
+                        <option value="rus">Евгений</option>
+                    </select>
+                </div>
+            </div>
+        </nav>
+        <div class="container">
+            <div class="main-action flex-box flex-row">
+                <div class="flex-box__column">
+                    <div class="logo">
+                        <a href="index.html"> <img src="pictures/logo.svg" alt="logo" class="logo__img"></a>
+                        <div class="logo__content flex-box flex-column">
+                            <h1 class="logo__name">Polaris</h1>
+                            <div class="logo__descr">магазин бытовой техники и электроники</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex-box__column">
+                    <form action="#" method="post" class="search-block flex-box">
+                        <div class="search-block__input flex-box">
+                            <div class="select-block">
+                                <select class="select" name="language">
+                                    <option value="">Каталог товаров</option>
+                                </select>
+                            </div>
+                            <input type="text" placeholder="Я ищу...">
+                        </div>
+                        <button type="submit" class="button">Найти <i class="fab fa-sistrix"></i></button>
+                    </form>
+                </div>
+                <div class="flex-box__column">
+                    <div class="personal-data flex-box">
+                        <div class="personal-data__item">
+                            <div class="item-icon block-hint">
+                                <a href="#"><img src="pictures/comparison.svg" alt="" class="item-icon"></a>
+                                <div class="item-data">1</div>
+                                <div class="hint">
+                                    <div class="arrow"></div>
+                                    <div class="hint__content">Сравнения</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="personal-data__item">
+                            <div class="item-icon block-hint">
+                                <a href="#"><img src="pictures/like.svg" alt="" class="item-icon"></a>
+                                <div class="item-data">3</div>
+                                <div class="hint">
+                                    <div class="arrow"></div>
+                                    <div class="hint__content">Избранное</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="personal-data__item flex-box">
+                            <div class="item-icon">
+                                <a href="basket.html"><img src="pictures/basket.svg" alt="" class="item-icon"></a>
+                                <div class="item-data">2</div>
+                            </div>
+                            <div class="item-title flex-box flex-column">
+                                <span>корзина</span>
+                                <h2>1230 руб.</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="background-photo">
+            <img src="pictures/background.webp" alt="background">
+        </div>
+    </header>
+
+    <section class="container">
+        <div class="grid">
+            <div class="grid__cell">
+                <img src="pictures/headfones.jpg" alt="headfones">
+                <div class="content">
+                    <span>электроника / наушники</span>
+                    <h2>стерео наушники</h2>
+                </div>
+                <div class="more">
+                    <button>Посмотреть больше</button>
+                </div>
+            </div>
+            <div class="grid__cell">
+                <img src="pictures/dishes.png" alt="dishes">
+                <div class="content">
+                    <span>Техника для кухни / Посуда</span>
+                    <h2>Кухонная посуда</h2>
+                </div>
+                <div class="more">
+                    <button>Посмотреть больше</button>
+                </div>
+            </div>
+            <div class="grid__cell">
+                <img src="pictures/room.png" alt="room">
+                <div class="content">
+                    <span>техника для дома</span>
+                    <h2>Мультимедиа и аксессуары</h2>
+                </div>
+                <div class="more">
+                    <button>Посмотреть больше</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="container">
+        <div class="advantages flex-box flex-row">
+            <div class="flex-box__column flex-box">
+                <img src="pictures/rocket.svg" alt="rocket">
+                <div>
+                    <h3>Реактивная доставка</h3>
+                    <p>Бесплатно от 5000 руб.</p>
+                </div>
+            </div>
+            <div class="flex-box__column flex-box">
+                <img src="pictures/point_map.svg" alt="point_map">
+                <div>
+                    <h3>возможность самовывоза</h3>
+                    <p>Из 7-ми магазинов по Москве</p>
+                </div>
+            </div>
+            <div class="flex-box__column flex-box">
+                <img src="pictures/comment.svg" alt="comment">
+                <div class="content">
+                    <h3>Бесплатная консультация</h3>
+                    <p>Поможем с выбором и заказом</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="new-arrival">
+        <div class="container">
+            <div class="section__title">Новые поступления</div>
+
+            <!-- Slider main container -->
+            <div class="swiper-container">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                        <div class="products flex-box">
+                            <div class="product-card">
+                                <span class="label">новинка</span>
+                                <div class="content flex-box flex-column">
+                                    <div class="product-card__image">
+                                        <a href="catalog.html">
+                                            <img src="pictures/fridge-1.jpg" alt="холодильник">
+                                        </a>
+                                    </div>
+                                    <h3 class="product-card__title">
+                                        Холодильник Atlant MXM 4025-000
+                                    </h3>
+                                    <p class="product-card__cost">23 340 руб.</p>
+                                </div>
+                                <div class="information flex-box">
+                                    <div class="block-hint">
+                                        <img src="pictures/like-green.svg" alt="like">
+                                        <div class="hint">
+                                            <div class="arrow"></div>
+                                            <div class="hint__content">В избранное</div>
+                                        </div>
+                                    </div>
+                                    <div class="block-hint">
+                                        <img src="pictures/comprasion-green.svg" alt="like">
+                                        <div class="hint">
+                                            <div class="arrow"></div>
+                                            <div class="hint__content">В сравнения</div>
+                                        </div>
+                                    </div>
+                                    <div class="block-hint">
+                                        <img src="pictures/basket-green.svg" alt="like-green">
+                                        <div class="hint">
+                                            <div class="arrow"></div>
+                                            <div class="hint__content">Добавить в корзину</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product-card">
+                                <span class="label">новинка</span>
+                                <div class="content flex-box flex-column">
+                                    <div class="product-card__image">
+                                        <a href="catalog.html">
+                                            <img src="pictures/fridge-2.jpeg" alt="холодильник">
+                                        </a>
+                                    </div>
+                                    <h3 class="product-card__title">
+                                        Холодильник Atlant MXM 4025-000
+                                    </h3>
+                                    <p class="product-card__cost">23 340 руб.</p>
+                                </div>
+                                <div class="information flex-box">
+                                    <div class="block-hint">
+                                        <img src="pictures/like-green.svg" alt="like">
+                                        <div class="hint">
+                                            <div class="arrow"></div>
+                                            <div class="hint__content">В избранное</div>
+                                        </div>
+                                    </div>
+                                    <div class="block-hint">
+                                        <img src="pictures/comprasion-green.svg" alt="like">
+                                        <div class="hint">
+                                            <div class="arrow"></div>
+                                            <div class="hint__content">В сравнения</div>
+                                        </div>
+                                    </div>
+                                    <div class="block-hint">
+                                        <img src="pictures/basket-green.svg" alt="like-green">
+                                        <div class="hint">
+                                            <div class="arrow"></div>
+                                            <div class="hint__content">Добавить в корзину</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product-card">
+                                <span class="label">новинка</span>
+                                <div class="content flex-box flex-column">
+                                    <div class="product-card__image">
+                                        <a href="catalog.html">
+                                            <img src="pictures/fridge-3.jpg" alt="холодильник">
+                                        </a>
+                                    </div>
+                                    <h3 class="product-card__title">
+                                        Холодильник Atlant MXM 4025-000
+                                    </h3>
+                                    <p class="product-card__cost">23 340 руб.</p>
+                                </div>
+                                <div class="information flex-box">
+                                    <div class="block-hint">
+                                        <img src="pictures/like-green.svg" alt="like">
+                                        <div class="hint">
+                                            <div class="arrow"></div>
+                                            <div class="hint__content">В избранное</div>
+                                        </div>
+                                    </div>
+                                    <div class="block-hint">
+                                        <img src="pictures/comprasion-green.svg" alt="like">
+                                        <div class="hint">
+                                            <div class="arrow"></div>
+                                            <div class="hint__content">В сравнения</div>
+                                        </div>
+                                    </div>
+                                    <div class="block-hint">
+                                        <img src="pictures/basket-green.svg" alt="like-green">
+                                        <div class="hint">
+                                            <div class="arrow"></div>
+                                            <div class="hint__content">Добавить в корзину</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="products flex-box">
+                            <div class="product-card">
+                                <span class="label">новинка</span>
+                                <div class="content flex-box flex-column">
+                                    <div class="product-card__image">
+                                        <a href="catalog.html">
+                                            <img src="pictures/fridge-1.jpg" alt="холодильник">
+                                        </a>
+                                    </div>
+                                    <h3 class="product-card__title">
+                                        Холодильник Atlant MXM 4025-000
+                                    </h3>
+                                    <p class="product-card__cost">23 340 руб.</p>
+                                </div>
+                                <div class="information flex-box">
+                                    <div class="block-hint">
+                                        <img src="pictures/like-green.svg" alt="like">
+                                        <div class="hint">
+                                            <div class="arrow"></div>
+                                            <div class="hint__content">В избранное</div>
+                                        </div>
+                                    </div>
+                                    <div class="block-hint">
+                                        <img src="pictures/comprasion-green.svg" alt="like">
+                                        <div class="hint">
+                                            <div class="arrow"></div>
+                                            <div class="hint__content">В сравнения</div>
+                                        </div>
+                                    </div>
+                                    <div class="block-hint">
+                                        <img src="pictures/basket-green.svg" alt="like-green">
+                                        <div class="hint">
+                                            <div class="arrow"></div>
+                                            <div class="hint__content">Добавить в корзину</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product-card">
+                                <span class="label">новинка</span>
+                                <div class="content flex-box flex-column">
+                                    <div class="product-card__image">
+                                        <a href="catalog.html">
+                                            <img src="pictures/fridge-2.jpeg" alt="холодильник">
+                                        </a>
+                                    </div>
+                                    <h3 class="product-card__title">
+                                        Холодильник Atlant MXM 4025-000
+                                    </h3>
+                                    <p class="product-card__cost">23 340 руб.</p>
+                                </div>
+                                <div class="information flex-box">
+                                    <div class="block-hint">
+                                        <img src="pictures/like-green.svg" alt="like">
+                                        <div class="hint">
+                                            <div class="arrow"></div>
+                                            <div class="hint__content">В избранное</div>
+                                        </div>
+                                    </div>
+                                    <div class="block-hint">
+                                        <img src="pictures/comprasion-green.svg" alt="like">
+                                        <div class="hint">
+                                            <div class="arrow"></div>
+                                            <div class="hint__content">В сравнения</div>
+                                        </div>
+                                    </div>
+                                    <div class="block-hint">
+                                        <img src="pictures/basket-green.svg" alt="like-green">
+                                        <div class="hint">
+                                            <div class="arrow"></div>
+                                            <div class="hint__content">Добавить в корзину</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product-card">
+                                <span class="label">новинка</span>
+                                <div class="content flex-box flex-column">
+                                    <div class="product-card__image">
+                                        <a href="catalog.html">
+                                            <img src="pictures/fridge-3.jpg" alt="холодильник">
+                                        </a>
+                                    </div>
+                                    <h3 class="product-card__title">
+                                        Холодильник Atlant MXM 4025-000
+                                    </h3>
+                                    <p class="product-card__cost">23 340 руб.</p>
+                                </div>
+                                <div class="information flex-box">
+                                    <div class="block-hint">
+                                        <img src="pictures/like-green.svg" alt="like">
+                                        <div class="hint">
+                                            <div class="arrow"></div>
+                                            <div class="hint__content">В избранное</div>
+                                        </div>
+                                    </div>
+                                    <div class="block-hint">
+                                        <img src="pictures/comprasion-green.svg" alt="like">
+                                        <div class="hint">
+                                            <div class="arrow"></div>
+                                            <div class="hint__content">В сравнения</div>
+                                        </div>
+                                    </div>
+                                    <div class="block-hint">
+                                        <img src="pictures/basket-green.svg" alt="like-green">
+                                        <div class="hint">
+                                            <div class="arrow"></div>
+                                            <div class="hint__content">Добавить в корзину</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="products flex-box">
+                            <div class="product-card">
+                                <span class="label">новинка</span>
+                                <div class="content flex-box flex-column">
+                                    <div class="product-card__image">
+                                        <a href="catalog.html">
+                                            <img src="pictures/fridge-1.jpg" alt="холодильник">
+                                        </a>
+                                    </div>
+                                    <h3 class="product-card__title">
+                                        Холодильник Atlant MXM 4025-000
+                                    </h3>
+                                    <p class="product-card__cost">23 340 руб.</p>
+                                </div>
+                                <div class="information flex-box">
+                                    <div class="block-hint">
+                                        <img src="pictures/like-green.svg" alt="like">
+                                        <div class="hint">
+                                            <div class="arrow"></div>
+                                            <div class="hint__content">В избранное</div>
+                                        </div>
+                                    </div>
+                                    <div class="block-hint">
+                                        <img src="pictures/comprasion-green.svg" alt="like">
+                                        <div class="hint">
+                                            <div class="arrow"></div>
+                                            <div class="hint__content">В сравнения</div>
+                                        </div>
+                                    </div>
+                                    <div class="block-hint">
+                                        <img src="pictures/basket-green.svg" alt="like-green">
+                                        <div class="hint">
+                                            <div class="arrow"></div>
+                                            <div class="hint__content">Добавить в корзину</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product-card">
+                                <span class="label">новинка</span>
+                                <div class="content flex-box flex-column">
+                                    <div class="product-card__image">
+                                        <a href="catalog.html">
+                                            <img src="pictures/fridge-2.jpeg" alt="холодильник">
+                                        </a>
+                                    </div>
+                                    <h3 class="product-card__title">
+                                        Холодильник Atlant MXM 4025-000
+                                    </h3>
+                                    <p class="product-card__cost">23 340 руб.</p>
+                                </div>
+                                <div class="information flex-box">
+                                    <div class="block-hint">
+                                        <img src="pictures/like-green.svg" alt="like">
+                                        <div class="hint">
+                                            <div class="arrow"></div>
+                                            <div class="hint__content">В избранное</div>
+                                        </div>
+                                    </div>
+                                    <div class="block-hint">
+                                        <img src="pictures/comprasion-green.svg" alt="like">
+                                        <div class="hint">
+                                            <div class="arrow"></div>
+                                            <div class="hint__content">В сравнения</div>
+                                        </div>
+                                    </div>
+                                    <div class="block-hint">
+                                        <img src="pictures/basket-green.svg" alt="like-green">
+                                        <div class="hint">
+                                            <div class="arrow"></div>
+                                            <div class="hint__content">Добавить в корзину</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product-card">
+                                <span class="label">новинка</span>
+                                <div class="content flex-box flex-column">
+                                    <div class="product-card__image">
+                                        <a href="catalog.html">
+                                            <img src="pictures/fridge-3.jpg" alt="холодильник">
+                                        </a>
+                                    </div>
+                                    <h3 class="product-card__title">
+                                        Холодильник Atlant MXM 4025-000
+                                    </h3>
+                                    <p class="product-card__cost">23 340 руб.</p>
+                                </div>
+                                <div class="information flex-box">
+                                    <div class="block-hint">
+                                        <img src="pictures/like-green.svg" alt="like">
+                                        <div class="hint">
+                                            <div class="arrow"></div>
+                                            <div class="hint__content">В избранное</div>
+                                        </div>
+                                    </div>
+                                    <div class="block-hint">
+                                        <img src="pictures/comprasion-green.svg" alt="like">
+                                        <div class="hint">
+                                            <div class="arrow"></div>
+                                            <div class="hint__content">В сравнения</div>
+                                        </div>
+                                    </div>
+                                    <div class="block-hint">
+                                        <img src="pictures/basket-green.svg" alt="like-green">
+                                        <div class="hint">
+                                            <div class="arrow"></div>
+                                            <div class="hint__content">Добавить в корзину</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+            </div>
+
+            <a href="#" class="button">Больше новинок</a>
+        </div>
+    </section>
+
+    <section class="promotion">
+        <!-- таймер -->
+        <div class="container">
+            <h2 class="section__title">Предложение дня</h2>
+
+            <h3>до конца акции осталось</h3>
+            <div id="countdown" class="countdown flex-box">
+                <div class="countdown-number">
+                    <span class="days countdown-time"></span>
+                    <span class="countdown-text">дней</span>
+                </div>
+                <div class="countdown-number">
+                    <span class="hours countdown-time"></span>
+                    <span class="countdown-text">часов</span>
+                </div>
+                <div class="countdown-number">
+                    <span class="minutes countdown-time"></span>
+                    <span class="countdown-text">минут</span>
+                </div>
+                <div class="countdown-number">
+                    <span class="seconds countdown-time"></span>
+                    <span class="countdown-text">секунд</span>
+                </div>
+            </div>
+
+            <div class="product-block">
+                <!-- Slider main container -->
+                <div class="swiper-container">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide">
+                            <div class="columns flex-box">
+                                <div class="product__photo">
+                                    <img src="pictures/fridge-4.jpeg" alt="холодильник">
+                                </div>
+                                <div class="product__description flex-box flex-column">
+                                    <h3 class="product__name description__row">Холодильник Atlant MXM 4025-000</h3>
+                                    <div class="additional-data flex-box flex-column">
+                                        <div class="description__row flex-box">
+                                            <div class="stars flex-box">
+                                                <img src="pictures/star-green.svg" alt="star">
+                                                <img src="pictures/star-green.svg" alt="star">
+                                                <img src="pictures/star-green.svg" alt="star">
+                                                <img src="pictures/star-green.svg" alt="star">
+                                                <img src="pictures/star-gray.svg" alt="star">
+                                            </div>
+                                            <a href="#" class="label">отзывов (12)</a>
+                                        </div>
+                                        <div class="description__row flex-box">
+                                            <div class="availability label">наличие: <span class="green-text">в наличии</span></div>
+                                        </div>
+                                    </div>
+                                    <div class="color flex-box flex-column">
+                                        <span class="label">цвет</span>
+                                        <div class="color-value">
+                                            <input type="radio" checked color="gray" class="custom-radio gray" id="color-gray1" name="color" value="yes">
+                                            <label for="color-gray1"></label>
+                                            <input type="radio" color="black" class="custom-radio" id="color-black1" name="color" value="yes">
+                                            <label for="color-black1"></label>
+                                            <input type="radio" color="gold" class="custom-radio" id="color-gold1" name="color" value="yes">
+                                            <label for="color-gold1"></label>
+                                        </div>
+                                    </div>
+                                    <div class="cost flex-box flex-column">
+                                        <p class="label">
+                                            <span class="green-text">-15%</span> экономия <span class="green-text">840 руб.</span>
+                                        </p>
+                                        <div class="cost__value flex-box">
+                                            <h3>23 450 руб.</h3>
+                                            <h4>25 560 руб.</h4>
+                                        </div>
+                                    </div>
+                                    <div class="count-product flex-box flex-column">
+                                        <span class="label">количество</span>
+                                        <div class="row flex-box">
+                                            <div class="column">
+                                                <div class="count__value">
+                                                    <input type="number" value="1"> 
+                                                    <div class="buttons flex-box">
+                                                        <span>-</span>
+                                                        <span>+</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="column">
+                                                <a href="#" class="button">+ добавить в корзину</a>
+                                            </div>
+                                            <div class="column flex-box">
+                                                <div class="block-hint">
+                                                    <img src="pictures/like-green.svg" alt="like">
+                                                    <div class="hint">
+                                                        <div class="arrow"></div>
+                                                        <div class="hint__content">В избранное</div>
+                                                    </div>
+                                                </div>
+                                                <div class="block-hint">
+                                                    <img src="pictures/comprasion-green.svg" alt="like">
+                                                    <div class="hint">
+                                                        <div class="arrow"></div>
+                                                        <div class="hint__content">В сравнения</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="columns flex-box">
+                                <div class="product__photo">
+                                    <img src="pictures/fridge-5.jpeg" alt="холодильник">
+                                </div>
+                                <div class="product__description flex-box flex-column">
+                                    <h3 class="product__name description__row">Холодильник Atlant MXM 4025-000</h3>
+                                    <div class="additional-data flex-box flex-column">
+                                        <div class="description__row flex-box">
+                                            <div class="stars flex-box">
+                                                <img src="pictures/star-green.svg" alt="star">
+                                                <img src="pictures/star-green.svg" alt="star">
+                                                <img src="pictures/star-green.svg" alt="star">
+                                                <img src="pictures/star-green.svg" alt="star">
+                                                <img src="pictures/star-gray.svg" alt="star">
+                                            </div>
+                                            <a href="#" class="label">отзывов (12)</a>
+                                        </div>
+                                        <div class="description__row flex-box">
+                                            <div class="availability label">наличие: <span class="green-text">в наличии</span></div>
+                                        </div>
+                                    </div>
+                                    <div class="color flex-box flex-column">
+                                        <span class="label">цвет</span>
+                                        <div class="color-value">
+                                            <input type="radio" checked color="gray" class="custom-radio gray" id="color1" name="color" value="yes">
+                                            <label for="color1"></label>
+                                            <input type="radio" color="black" class="custom-radio" id="color2" name="color" value="yes">
+                                            <label for="color2"></label>
+                                            <input type="radio" color="gold" class="custom-radio" id="color3" name="color" value="yes">
+                                            <label for="color3"></label>
+                                        </div>
+                                    </div>
+                                    <div class="cost flex-box flex-column">
+                                        <p class="label">
+                                            <span class="green-text">-15%</span> экономия <span class="green-text">840 руб.</span>
+                                        </p>
+                                        <div class="cost__value flex-box">
+                                            <h3>23 450 руб.</h3>
+                                            <h4>25 560 руб.</h4>
+                                        </div>
+                                    </div>
+                                    <div class="count-product flex-box flex-column">
+                                        <span class="label">количество</span>
+                                        <div class="row flex-box">
+                                            <div class="column">
+                                                <div class="count__value">
+                                                    <input type="number" value="1"> 
+                                                    <div class="buttons flex-box">
+                                                        <span>-</span>
+                                                        <span>+</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="column">
+                                                <a href="#" class="button">+ добавить в корзину</a>
+                                            </div>
+                                            <div class="column flex-box">
+                                                <div class="block-hint">
+                                                    <img src="pictures/like-green.svg" alt="like">
+                                                    <div class="hint">
+                                                        <div class="arrow"></div>
+                                                        <div class="hint__content">В избранное</div>
+                                                    </div>
+                                                </div>
+                                                <div class="block-hint">
+                                                    <img src="pictures/comprasion-green.svg" alt="like">
+                                                    <div class="hint">
+                                                        <div class="arrow"></div>
+                                                        <div class="hint__content">В сравнения</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="columns flex-box">
+                                <div class="product__photo">
+                                    <img src="pictures/fridge-6.jpeg" alt="холодильник">
+                                </div>
+                                <div class="product__description flex-box flex-column">
+                                    <h3 class="product__name description__row">Холодильник Atlant MXM 4025-000</h3>
+                                    <div class="additional-data flex-box flex-column">
+                                        <div class="description__row flex-box">
+                                            <div class="stars flex-box">
+                                                <img src="pictures/star-green.svg" alt="star">
+                                                <img src="pictures/star-green.svg" alt="star">
+                                                <img src="pictures/star-green.svg" alt="star">
+                                                <img src="pictures/star-green.svg" alt="star">
+                                                <img src="pictures/star-gray.svg" alt="star">
+                                            </div>
+                                            <a href="#" class="label">отзывов (12)</a>
+                                        </div>
+                                        <div class="description__row flex-box">
+                                            <div class="availability label">наличие: <span class="green-text">в наличии</span></div>
+                                        </div>
+                                    </div>
+                                    <div class="color flex-box flex-column">
+                                        <span class="label">цвет</span>
+                                        <div class="color-value">
+                                            <input type="radio" checked color="gray" class="custom-radio gray" id="color-gray2" name="color" value="yes">
+                                            <label for="color-gray2"></label>
+                                            <input type="radio" color="black" class="custom-radio" id="color-black2" name="color" value="yes">
+                                            <label for="color-black2"></label>
+                                            <input type="radio" color="gold" class="custom-radio" id="color-gold2" name="color" value="yes">
+                                            <label for="color-gold2"></label>
+                                        </div>
+                                    </div>
+                                    <div class="cost flex-box flex-column">
+                                        <p class="label">
+                                            <span class="green-text">-15%</span> экономия <span class="green-text">840 руб.</span>
+                                        </p>
+                                        <div class="cost__value flex-box">
+                                            <h3>23 450 руб.</h3>
+                                            <h4>25 560 руб.</h4>
+                                        </div>
+                                    </div>
+                                    <div class="count-product flex-box flex-column">
+                                        <span class="label">количество</span>
+                                        <div class="row flex-box">
+                                            <div class="column">
+                                                <div class="count__value">
+                                                    <input type="number" value="1"> 
+                                                    <div class="buttons flex-box">
+                                                        <span>-</span>
+                                                        <span>+</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="column">
+                                                <a href="#" class="button">+ добавить в корзину</a>
+                                            </div>
+                                            <div class="column flex-box">
+                                                <div class="block-hint">
+                                                    <img src="pictures/like-green.svg" alt="like">
+                                                    <div class="hint">
+                                                        <div class="arrow"></div>
+                                                        <div class="hint__content">В избранное</div>
+                                                    </div>
+                                                </div>
+                                                <div class="block-hint">
+                                                    <img src="pictures/comprasion-green.svg" alt="like">
+                                                    <div class="hint">
+                                                        <div class="arrow"></div>
+                                                        <div class="hint__content">В сравнения</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- If we need pagination -->
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="partners">
+        <div class="content flex-box flex-column">
+            <h3>Наши партнеры</h3>
+            <div class="logos flex-box flex-column">
+                <div class="row flex-box">
+                    <img src="pictures/Vector.svg" alt="">
+                    <img src="pictures/Vector-1.svg" alt="">
+                    <img src="pictures/Vector-2.svg" alt="">
+                    <img src="pictures/Vector-3.svg" alt="">
+                </div>
+                <div class="row flex-box">
+                    <img src="pictures/Vector-4.svg" alt="">
+                    <img src="pictures/Vector-5.svg" alt="">
+                    <img src="pictures/Vector-6.svg" alt="">
+                    <img src="pictures/Vector-7.svg" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container flex-box flex-column">
+            <div class="row flex-box">
+                <div class="column">
+                    <div class="logo">
+                        <img src="pictures/logo.svg" alt="logo" class="logo__img">
+                        <div class="logo__content flex-box flex-column">
+                            <h1 class="logo__name">Polaris</h1>
+                            <div class="logo__descr">магазин бытовой техники и электроники</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="column flex-box">
+                    <img src="pictures/headfones_logo.svg" alt="headfones_logo" class="headfones_logo">
+                    <div class="content flex-box flex-column">
+                        <span>Есть вопросы? Прием звонков с 9:00 до 19:00</span>
+                        <div class="phones flex-box">
+                            <h2 class="phone">071-33-44-811</h2>
+                            <span>или</span>
+                            <h2 class="phone">071-33-44-811</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row flex-box">
+                <div class="column">
+                    <div class="menu-footer flex-box">
+                        <div class="menu-column flex-box flex-column">
+                            <div class="menu-title">О магазине</div>
+                            <div class="menu-items">
+                                <div class="item"><a href="#">Каталог</a></div>
+                                <div class="item"><a href="#">Акции</a></div>
+                                <div class="item"><a href="#">Товары дня</a></div>
+                                <div class="item"><a href="#">Магазин и контакты</a></div>
+                                <div class="item"><a href="#">Доставка и оплата</a></div>
+                            </div>
+                        </div>
+                        <div class="menu-column flex-box flex-column">
+                            <div class="menu-title">Для клиента</div>
+                            <div class="menu-items">
+                                <div class="item"><a href="#">Личный кабинет</a></div>
+                                <div class="item"><a href="#">Корзина</a></div>
+                                <div class="item"><a href="#">Избранное</a></div>
+                                <div class="item"><a href="#">Сравнения</a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="row-mailing flex-box">
+                        <img src="pictures/mail_logo.svg" alt="mail_logo">
+                        <div class="caption">
+                            <span>Подпишитесь на рассылку, чтобы получать</span>
+                            <p>эксклюзивные предложения, акции и скидки</p>
+                        </div>
+                    </div>
+                    <div class="row-mailing flex-box">
+                        <form action="#" class="flex-box">
+                            <input type="email" placeholder="введите ваш email">
+                            <button type="submit">отправить</button>
+                        </form>
+                    </div>
+                    <div class="row-mailing flex-box">
+                        <span>Мы в соц.сетях</span>
+                        <div class="icons flex-box">
+                            <i class="fa fa-vk" aria-hidden="true"></i>
+                            <i class="fa fa-facebook-square" aria-hidden="true"></i>
+                            <i class="fa fa-instagram" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row flex-box">
+                <div class="column">
+                    <p>&copy; 2013 - 2020 Интернет-магазин бытовой техники и электроники - <b>POLARIS</b> </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>
