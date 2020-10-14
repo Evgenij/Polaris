@@ -109,7 +109,7 @@ select[ui-style="ui_select"] {
     width: 100%;
     padding-right: 50px;
     appearance: none;
-    background: url('../pictures/arrow.svg') no-repeat right;
+    background: url('pictures/arrow.svg') no-repeat right;
     background-position-x: calc(100% - 20px);
     background-color: $backgroundInput;
 }
