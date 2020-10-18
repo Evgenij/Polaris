@@ -437,6 +437,7 @@ textarea {
     }
 
     .label {
+        z-index: 100;
         position: absolute;
         right: -15px;
         top: 20px;
@@ -448,9 +449,9 @@ textarea {
     }
 
     .product-card__title {
-        font-size: 16px;
+        font-size: 14px;
         font-weight: normal;
-        line-height: 1.3em;
+        line-height: 1.4em;
     }
 
     .product-card__cost {
@@ -474,7 +475,7 @@ textarea {
 .product-card__image {
     z-index: 50;
     width: 100%;
-    height: 180px;
+    height: 150px;
     position: relative;
     cursor: pointer;
 

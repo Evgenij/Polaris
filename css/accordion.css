@@ -13,9 +13,11 @@
   transition: 0.4s;
   margin-bottom: 5px;
   position: relative;
-  line-height: 1.3em; }
-  .accordion__button:hover {
-    color: #8AB809; }
+  line-height: 1.3em;
+}
+.accordion__button:hover {
+  color: #8AB809;
+}
 
 .accordion__button::before,
 .accordion__button::after {
@@ -28,28 +30,34 @@
   top: 50%;
   margin-top: -1px;
   -webkit-transition: 0.3s;
-  transition: 0.3s; }
+  transition: 0.3s;
+}
 
 .accordion__button::before {
   -webkit-transform: rotate(45deg);
-          transform: rotate(45deg); }
+          transform: rotate(45deg);
+}
 
 .accordion__button::after {
   -webkit-transform: rotate(-45deg) translate(3px, 3px);
-          transform: rotate(-45deg) translate(3px, 3px); }
+          transform: rotate(-45deg) translate(3px, 3px);
+}
 
 .accordion__button.active::before {
   -webkit-transform: rotate(-45deg);
-          transform: rotate(-45deg); }
+          transform: rotate(-45deg);
+}
 
 .accordion__button.active::after {
   -webkit-transform-origin: right bottom;
           transform-origin: right bottom;
   -webkit-transform: rotate(45deg) translate(3px, 0px);
-          transform: rotate(45deg) translate(3px, 0px); }
+          transform: rotate(45deg) translate(3px, 0px);
+}
 
 .accordion__data {
   max-height: 0;
   overflow: hidden;
   -webkit-transition: max-height 0.2s ease-out;
-  transition: max-height 0.2s ease-out; }
+  transition: max-height 0.2s ease-out;
+}
